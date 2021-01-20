@@ -5,17 +5,23 @@
     <script>
         function passValue() {
             var items = document.getElementById("flatSneaker").value;
+            var price = '2000';
             localStorage.setItem("textvalue", items);
+            localStorage.setItem("price", price);
             return false;
         }
         function passValueTwo() {
             var items = document.getElementById("sneakerTwo").value;
+            var price = '2300';
             localStorage.setItem("textvalue", items);
+            localStorage.setItem("price", price);
             return false;
         }
         function passValueThree() {
             var items = document.getElementById("sneakerThree").value;
+            var price = '2500';
             localStorage.setItem("textvalue", items);
+            localStorage.setItem("price", price);
             return false;
         }
     </script>
@@ -43,6 +49,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="register.html">Register</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
 
             </ul>
             <ul class="navbar-nav ml-auto">
@@ -67,9 +76,7 @@
                         src="https://images-na.ssl-images-amazon.com/images/I/71kDt7QpH6L._UL1500_.jpg" alt="Image1">
                     <div class="card-body">
                         <h5 class="card-title">Flat White Snekear Shoe</h5>
-                        <p class="card-text">Lorem ipsun repellendus sit, tenetur quod
-                            tione hic ad totam quo sed magni saepe? Quos obcaecati dolor doloribus magnam
-                            illo.</p>
+                        <p class="card-text">A cool white sneaker with only 2000 etb.</p>
                         <form action="buy.html">
                                 <input type="radio" value="Flat White Sneaker Shoe" id="flatSneaker" disabled>
                                 <input type="submit" value="Buy" class="btn btn-primary btn-lg" onclick="passValue()">
@@ -85,9 +92,7 @@
                         alt="Image2">
                     <div class="card-body">
                         <h5 class="card-title">Cool Gray Snekear Shoe</h5>
-                        <p class="card-text">Lorem ipsun repellendus sit, tenetur quod
-                            tione hic ad totam quo sed magni saepe? Quos obcaecati dolor doloribus magnam
-                            illo.</p>
+                        <p class="card-text">Gray unique sneaker with only 2300 etb.</p>
                             <form action="buy.html">
                                 <input type="radio" value="Cool Gray Sneaker Shoe" id="sneakerTwo" disabled>
                                 <input type="submit" value="Buy" class="btn btn-primary btn-lg" onclick="passValueTwo()">
@@ -101,9 +106,7 @@
                         src="https://images-na.ssl-images-amazon.com/images/I/81V3PwCty3L._UY500_.jpg" alt="Image3">
                     <div class="card-body">
                         <h5 class="card-title">Black-Orange Nike Air Snekear Shoe</h5>
-                        <p class="card-text">Lorem ipsun repellendus sit, tenetur quod
-                            tione hic ad totam quo sed magni saepe? Quos obcaecati dolor doloribus magnam
-                            illo.</p>
+                        <p class="card-text">A nice black-orange sneaker with only 2500 etb.</p>
                             <form action="buy.html">
                                 <input type="radio" value="Black-Orange Nike Air Sneaker Shoe" id="sneakerThree" disabled>
                                 <input type="submit" value="Buy" class="btn btn-primary btn-lg" onclick="passValueThree()">
